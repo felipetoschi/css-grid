@@ -1,0 +1,63 @@
+*{margin: 0px; padding: 0px;}
+
+.grid-container {
+ display: grid;
+ justify-content: center; 
+ max-width: 1200px; 
+ margin: 0px auto; 
+ grid-template-columns: 240px 240px 240px 240px 240px;
+ grid-template-rows: 240px 240px 240px 240px 240px;
+ gap: 0px 0px;
+ grid-template-areas:
+   "navbar promocao promocao promocao promocao"
+   "navbar produto1  produto2 produto3 produto4"
+   "navbar produto5  produto6 produto7 produto8"
+   "navbar produto9  produto10 produto12 produto13"
+   "navbar produto14 produto15 produto16 produto17"
+   ;
+}
+
+
+.navbar { grid-area: navbar; background-color: #eee;margin: 2px;}
+
+.promocao { grid-area: promocao; background-color: #eee;margin: 2px;}
+
+.produto1 { grid-area: produto1; background-color: #eee;margin: 2px;}
+
+
+.produto2 { grid-area: produto2; background-color: #eee;margin: 2px; padding: 5px 10px 0px 10px; display: flex;flex-wrap: wrap;justify-content: center;}
+img.fotoproduto{ width: 100px; height: 100px; background-color: rgb(240, 101, 9); border: 1px; border-radius: 50px;}
+img.fotoproduto:hover{background-color: rgb(54, 180, 238); border: 1px; border-radius: 50px; transition: .5s;}
+p.nomeproduto{font-size: 1.5rem;}
+p.descricaoproduto{font-size: 1rem; font-style: italic; text-align: justify;}
+p.preco{font-size: 1.5rem;text-align: center; font-weight: bold;}
+button.botaocomprarnoproduto{width: 50px; margin-left: 5px; margin-bottom: 5px; font-size: 1rem;}
+
+
+.produto3 { grid-area: produto3; background-color: #eee;margin: 2px;}
+
+.produto4 { grid-area: produto4; background-color: #eee;margin: 2px;}
+
+.produto5 { grid-area: produto5; background-color: #eee;margin: 2px;}
+
+.produto6 { grid-area: produto6; background-color: #eee;margin: 2px;}
+
+.produto7 { grid-area: produto7; background-color: #eee;margin: 2px;}
+
+.produto8 { grid-area: produto8; background-color: #eee;margin: 2px;}
+
+.produto9 { grid-area: produto9; background-color: #eee;margin: 2px;}
+
+.produto10 { grid-area: produto10; background-color: #eee;margin: 2px;}
+
+.produto12 { grid-area: produto12; background-color: #eee;margin: 2px;}
+
+.produto13 { grid-area: produto13; background-color: #eee;margin: 2x;}
+
+.produto14 { grid-area: produto14; background-color: #eee;margin: 2x;}
+
+.produto15 { grid-area: produto15; background-color: #eee;margin: 2px;}
+
+.produto16 { grid-area: produto16; background-color: #eee;margin: 2px;}
+
+.produto17 { grid-area: produto17; background-color: #eee;margin: 2px;}

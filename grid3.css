@@ -1,0 +1,62 @@
+*{margin: 0px; padding: 0px}
+
+body{
+  background-color: #a5a5a5;
+}
+
+.grid-container {
+ display: grid;
+ justify-content: center; 
+ margin: 0px auto; 
+ padding: 20px;
+ grid-template-columns: 200px 200px 200px 200px 200px;
+ grid-template-rows: 200px 200px 200px 200px 200px;
+ gap: 10px;
+ grid-template-areas:
+   "navbar promocao promocao promocao promocao"
+   "navbar produto1  produto2 produto3 produto4"
+   "navbar produto5  produto6 produto7 produto8"
+   "navbar produto9  produto10 produto11 produto12"
+   "navbar produto14 produto15 produto16 produto17"
+}
+
+.navbar { grid-area: navbar; background-color: rgb(103, 161, 156);margin: 2px; padding: 5px}
+
+.promocao { grid-area: promocao; background-color: rgb(206, 19, 19);margin: 2px; padding: 5px}
+
+.produto1 { grid-area: produto1; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto2 { grid-area: produto2; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto3 { grid-area: produto3; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto4 { grid-area: produto4; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto5 { grid-area: produto5; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto6 { grid-area: produto6; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto7 { grid-area: produto7; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto8 { grid-area: produto8; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto9 { grid-area: produto9; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto10 { grid-area: produto10; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto11{ grid-area: produto11; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto12 { grid-area: produto12; background-color: #eee;margin: 2x; padding: 5px}
+
+.produto13 { grid-area: produto13; background-color: #eee;margin: 2x; padding: 5px}
+
+.produto14 { grid-area: produto14; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto15 { grid-area: produto15; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto16 { grid-area: produto16; background-color: #eee;margin: 2px; padding: 5px}
+
+.produto17 { grid-area: produto17; background-color: #eee;margin: 2px; padding: 5px}
+
+
+

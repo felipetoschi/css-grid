@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+body{
+  width: 100%; 
+  height: 100vh; 
+  background-color: rgb(175, 172, 172);
+}
+
+header{
+  display: flex; 
+  justify-content: space-evenly; 
+  width: 100%; 
+  height: 70px; 
+  background-color: #101010; 
+  padding: 10px; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  flex-direction: column;
+}
+
+.logo{width: 45px; height: 45px; border-radius: 50%; background-color: #ccc;}
+
+.menu{display: flex; list-style: none; flex-wrap: wrap;}
+.menu li a{color: #fff; display: block; text-decoration: none; margin-left: 10px;}
+
+
+.container{
+justify-content: center; 
+max-width: 1200px; 
+margin: 0 auto; 
+margin-top: 10px;
+padding: 10px;
+display: grid; 
+gap: 10px;
+grid-template-areas: 
+"sidenav item item"
+"sidenav item item"
+"sidenav item item"
+"footer footer footer";
+}
+
+
+img{width: 100%;}
+
+.sidenav{
+  max-width: 300px;
+  min-width: 250px ;
+  height: auto; 
+  background-color: #3333; 
+  border-radius: 20px; 
+  grid-area: "sidenav"; 
+  grid-row: sidenav;}
+
+.item{
+  max-width: 300px; 
+  min-width: 250px;
+  height: 300px;
+  background-color: #3333;
+  border-radius: 10px;
+  grid-area: "item";}
+
+.footer{
+  width: auto; 
+  height: 100px; 
+  background-color: #3333; 
+  border-radius: 20px; 
+  grid-area: "footer"; 
+  grid-column: footer;}
+
+
+@media(max-width: 2560px){
+  .container{grid-template-areas:
+    "sidenav item item item"
+    "sidenav item item item"
+    "sidenav item item item"
+    "footer footer footer footer"}
+ }
+
+@media(max-width: 1440px){
+  .container{grid-template-areas:
+    "sidenav item item item"
+    "sidenav item item item"
+    "sidenav item item item"
+    "footer footer footer footer"}
+ }
+
+@media(max-width: 1200px){
+  .container{grid-template-areas:
+    "sidenav item item"
+    "sidenav item item"
+    "sidenav item item"
+    "footer footer footer"}
+ }
+
+@media(max-width: 890px){
+ .container{grid-template-areas:
+  "sidenav item"
+  "sidenav item"
+  "sidenav item"
+  "sidenav item"
+  "sidenav item"
+  "sidenav item"
+  "footer footer";}
+}
+
+@media(max-width: 540px){
+ .sidenav{
+  height: 200px;
+ }
+ .container{grid-template-areas:
+  "sidenav"
+  "item"
+  "item"
+  "item"
+  "item"
+  "item"
+  "item"
+  "footer";}
+}
+
+
+
+
